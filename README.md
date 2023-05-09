@@ -12,40 +12,50 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Installing
 
-<pre>open terminal and type</pre>
-<code>git clone https://github.com/narainsagar/Django-pollio-app.git</code><br><br>
-
-<h4>or simply download using the url below</h4>
-<code>https://github.com/narainsagar/Django-pollio-app.git</code><br>
+> git clone or simply download this code:
 
 ```bash
+https://github.com/narainsagar/Django-pollio-app.git
+```
 
+> following steps will setup the project on your machine.
+
+```bash
+### Create and Activate the Virtual enviornment
 $ python -m venv .venv
 $ source .venv/bin/activate
 
+### install the project dependencies
 $ pip install -r requirements.txt
 ```
 
-<h2>To migrate the database open terminal in project directory and type</h2>
-<code>python manage.py makemigrations</code><br>
-<code>python manage.py migrate</code>
+> To migrate the database open terminal in project directory and type
+```bash
+$ python manage.py makemigrations
+$ python manage.py migrate
+```
 
-<h2>To use admin panel you need to create superuser using this command </h2>
-<code>$ python manage.py createsuperuser</code>
+> To use admin panel you need to create superuser using this command.
 
-<h2>To Create some dummy text data for your app follow the step below:</h2>
-<code>$ pip install faker</code>
-<code>$ python manage.py shell</code>
-<code>import seeder</code>
-<code>seeder.seed_all(10)</code>
-<p>Here 10 is a number of entry. You can use it as your own</p>
+`$ python manage.py createsuperuser`
 
-## Running and Demo
+> To Create some dummy text data for your app follow the step below:
 
-<h2> To run the program in local server use the following command </h2>
-<code>$ python manage.py runserver 5000</code>
+```bash
+$ pip install faker
+$ python manage.py shell
+import seeder
+seeder.seed_all(10) # Here 10 is a number of entry. You can use it as your own
+```
 
-<p>Then go to http://127.0.0.1:5000 in your browser</p>
+> To run the program in local server use the following command.
+```bash
+$ python manage.py runserver 5000
+```
+
+Then navigate to http://127.0.0.1:5000 in your browser or checkout the Demo snapshots as below.
+
+## Demo
 
 <h2>Project snapshot</h2>
 <h3>Home page</h3>
